@@ -1,0 +1,24 @@
+# Common Features
+USER_ID_FIELD: userID
+ITEM_ID_FIELD: itemID
+#RATING_FIELD: rating
+TIME_FIELD: timestamp
+
+filter_out_cod_start_users: True
+
+inter_file_name: 'microlens.inter'
+
+# name of features
+vision_feature_file: 'image_feat.npy'
+#text_feature_file: 'text_feat.npy'
+text_feature_file: 'text_glm_feat.npy'
+#user_graph_dict.npy 原
+#user_graph_dict1.npy 交互长度占子用户的权重
+#user_graph_dict2.npy 交互长度占主用户的权重
+user_graph_dict_file: 'user_graph_dict.npy'
+item_graph_dict_file: 'item_graph_dict.npy'
+#item_graph_dict_file: 'item_graph_dict1.npy'
+video_feature_file: 'video_all_feat.npy'
+frame_feature_file: 'frame_all_feat.npy'
+
+field_separator: "\t"

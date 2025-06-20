@@ -1,0 +1,27 @@
+embedding_size: 64
+n_ui_layers: 2
+n_layers: 1
+
+learning_rate_scheduler: [0.96, 50]
+lambda_coeff: 0.9
+reg_weight: 1e-04
+#reg_weight: [0.00001,0.0001,0.001,0.01,0.1,1,10]
+beta: [0.01, 0.1, 1]
+
+knn_k: 10
+
+learning_rate: 0.001
+
+cl_loss: [0.1] # 0.00001,0.0001,0.001,0.01,0.1,1,10
+L_intereset: [0.00001,0.0001,0.001,0.01,0.1,1,10] # 0.00001,0.0001,0.001,0.01,0.1,1,10
+
+mixture_type: ['add&dif'] #single / mixture:'add&dif','concate&dif','dif'
+frame_gate_type: ['learnable'] #'fixed','learnable','gru','no','user_learnable'
+loss_type: ['L1','L2','L1&L2']
+loss_lamda: [1e-04,1e-05,1e-03]
+
+num_dif_gats: [8]
+GD_topk: [2] # ,3,4,5,6,7
+wrong: [false] # true false
+userOritem: ['item'] #ii增强图时用uu图还是ii图  #'user', 'item'
+hyper_parameters: ["cl_loss","GD_topk","num_dif_gats","frame_gate_type","mixture_type","wrong","userOritem","L_intereset"]
